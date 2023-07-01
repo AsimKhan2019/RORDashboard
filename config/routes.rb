@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
   get 'dashboard/index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get 'dashboard/user_profile'
+  get 'dashboard/table_list'
+  get 'dashboard/typography'
+  get 'dashboard/icons'
+  get 'dashboard/maps'
+  get 'dashboard/notifications'
+  get 'dashboard/rtl_support'
 
-  # Defines the root path route ("/")
-   root "dashboard#index"
+  root 'dashboard#index'
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
